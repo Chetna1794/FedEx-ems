@@ -1,0 +1,37 @@
+<div class="mobile-screen">
+  <div class="header">
+  </div>
+  
+  <div class="logo"></div>
+  
+  <form id="registration-form" class="registration-form">
+    <input type="text" name="registerInfogainId" placeholder="Infogain ID">
+    <input type="text" name="registerFedexId" placeholder="FedEx ID">
+    <input type="password" name="registerPassword" placeholder="Employee Password">
+    <input type="text" name="adminId" placeholder="Admin ID">
+    <input type="password" name="adminPassword" placeholder="Admin password">
+    <a href="#" class="register-btn" id="signup-btn">REGISTER</a>
+  </form>
+
+  <form id="login-form" class="login-form">
+    <input type="text" name="loginInfogainId" placeholder="Infogain ID">
+    <input type="password" name="loginInfogainPassword" placeholder="Password">
+    <a href="#" class="login-btn">LOGIN</a>
+  </form>
+  
+  <form id="fpass-form" class="forgot-password-form">
+    <input type="text" name="infogainEmployeeId" placeholder="Infogain E-mail ID">
+    <input type="text" name="employeeMobileNo" placeholder="Mobile Number">
+    <a href="#" class="login-btn" id="getpass-btn">GET PASSWORD</a>
+  </form>
+  
+  <div class="other-options">
+    <div class="option" id="newEmployee" (click)="newUserClick();"><p class="option-text">New Employee</p></div>
+    <div class="option" id="forgotPassword"><p class="option-text" (click)="forgotPasswordClick();"> Forgotten password</p></div>
+  </div>
+
+  <div class="existing-user-option">
+    <div class="option" id="existingEmployee"><p class="option-text" (click)="existingUserClick();">Existing Employee</p></div>
+  </div>
+  
+</div>
